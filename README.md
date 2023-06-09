@@ -1,6 +1,6 @@
 <div align='center'>
 <p align='center'>
-  <img width='50%' src='./.assets/CeBed_back.png' />
+  <img width='50%' src='./.assets/banner.png' />
 </p>
 
 
