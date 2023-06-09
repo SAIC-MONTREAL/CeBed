@@ -1,0 +1,33 @@
+simo_4_umi_block_1_ps2_p72: &simo_base
+  default:
+    dropout_rate: 0.3
+    hidden_size: 12
+    input_type: low
+    kernel_size: 2
+    lr: 0.002
+    num_dc_layers: 3
+    num_en_layers: 1
+    output_dim: [14,72,8]
+
+simo_4_uma_block_1_ps2_p72:
+  << : *simo_base
+
+siso_1_umi_block_1_ps2_p72: &siso_base
+  default:
+    dropout_rate: 0.1
+    hidden_size: 2
+    input_type: low
+    kernel_size: 2
+    lr: 0.002
+    num_dc_layers: 1
+    num_en_layers: 1
+    output_dim: [14,72,2]
+
+siso_1_umi_block_1_ps1_p72:
+  << : *siso_base
+siso_1_umi_block_2_ps2_p36:
+  << : *siso_base
+siso_1_umi_block_2_ps1_p36:
+  << : *siso_base
+siso_1_uma_block_1_ps2_p72:
+  << : *siso_base

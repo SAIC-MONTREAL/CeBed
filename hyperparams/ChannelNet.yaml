@@ -1,0 +1,37 @@
+siso_1_umi_block_1_ps2_p72:  &siso_base
+  default:
+    dropout_rate: 0.1
+    sr_hidden_size: [64, 32]
+    sr_kernels: [9, 1 ,5]
+    dc_hidden: 64
+    num_dc_layers: 18
+    input_type: "low"
+    lr: 0.001
+    int_type: "bilinear"
+    output_dim: [14,72,2]
+siso_1_umi_block_1_ps1_p72:
+  << : *siso_base
+siso_1_umi_block_2_ps2_p36:
+  << : *siso_base
+siso_1_umi_block_2_ps1_p36:
+  << : *siso_base
+
+siso_1_uma_block_1_ps2_p72:
+  << : *siso_base
+
+simo_4_umi_block_1_ps2_p72: &simo_base
+  default:
+    dropout_rate: 0.1
+    sr_hidden_size: [64, 32]
+    sr_kernels: [9, 1 ,5]
+    dc_hidden: 64
+    num_dc_layers: 18
+    input_type: "low"
+    lr: 0.001
+    output_dim: [14,72,8]
+    int_type: "bilinear"
+
+
+
+simo_4_uma_block_1_ps2_p72:
+  << : *simo_base

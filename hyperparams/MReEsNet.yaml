@@ -1,0 +1,32 @@
+simo_4_umi_block_1_ps2_p72: &simo_base
+    default:
+        n_blocks: 4
+        hidden_size: 64
+        kernel_size: 3
+        input_type: "raw"
+        lr: 0.001
+        output_dim: [14,72,8]
+
+simo_4_uma_block_1_ps2_p72:
+    << : *simo_base
+
+siso_1_umi_block_1_ps2_p72: &siso_base
+  default:
+    hidden_size: 16
+    input_type: raw
+    kernel_size: 3
+    lr: 0.001
+    n_blocks: 4
+    output_dim: [14,72,2]
+
+siso_1_uma_block_1_ps2_p72:
+    << : *siso_base
+
+siso_1_umi_block_1_ps1_p72:
+    << : *siso_base
+
+siso_1_umi_block_2_ps2_p36:
+    << : *siso_base
+
+siso_1_umi_block_2_ps1_p36:
+    << : *siso_base

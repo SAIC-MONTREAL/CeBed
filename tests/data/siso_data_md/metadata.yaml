@@ -1,0 +1,23 @@
+!!python/object:cebed.envs.EnvConfig
+carrier_frequency: 2100000000.0
+direction: uplink
+dynamic_topology: true
+fft_size: 72
+los: false
+n_ues: 1
+normalize_channel: true
+num_bits_per_symbol: 2
+num_ofdm_symbols: 14
+num_rx_antennas: 1
+num_streams_per_tx: 1
+p_spacing: 1
+path_loss: true
+pilot_ofdm_symbol_indices:
+- 3
+- 10
+pilot_pattern: block
+scenario: umi
+seed: 0
+shadowing: true
+subcarrier_spacing: 30000.0
+ue_speed: 5

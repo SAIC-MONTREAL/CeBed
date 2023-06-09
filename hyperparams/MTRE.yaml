@@ -1,0 +1,32 @@
+
+siso_1_umi_block_1_ps2_p72: &siso_base
+  default:
+    dropout_rate: 0.1
+    input_type: raw
+    lr: 0.001
+    num_layers: 6
+    output_dim: [14,72,2]
+
+siso_1_umi_block_1_ps1_p72:
+  << : *siso_base
+
+siso_1_umi_block_2_ps2_p36:
+  << : *siso_base
+
+siso_1_umi_block_2_ps1_p36:
+  << : *siso_base
+
+siso_1_uma_block_1_ps2_p72:
+  << : *siso_base
+
+
+simo_4_umi_block_1_ps2_p72: &simo_base
+  default:
+    dropout_rate: 0.5
+    input_type: raw
+    lr: 0.001
+    num_layers: 2
+    output_dim: [14,72,8]
+
+simo_4_uma_block_1_ps2_p72:
+  << : *simo_base
