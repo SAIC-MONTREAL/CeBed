@@ -126,7 +126,7 @@ If you use our code, please cite our work.
   author  = {Amal Feriani and Di Wu and Steve Liu and Greg Dudek},
   title   = {CeBed: A Benchmark for Deep Data-Driven OFDM Channel Estimation},
   url     = {https://github.com/SAIC-MONTREAL/cebed.git}
-  yeart   = {2023}
+  year   = {2023}
 }
 ```
 
